@@ -76,7 +76,7 @@ const RootLayout = () => {
       </Sider>
 
       <Layout className="site-layout">
-        <Breadcrumb>
+        {/* <Breadcrumb>
           {pathnames.length > 0 ? (
             <Breadcrumb.Item>
               <Link to="/">Home</Link>
@@ -95,7 +95,7 @@ const RootLayout = () => {
               </Breadcrumb.Item>
             );
           })}
-        </Breadcrumb>
+        </Breadcrumb> */}
         <AppRouter />
       </Layout>
     </Layout>

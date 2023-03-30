@@ -1,4 +1,3 @@
-import { Avatar } from "antd";
 import React from "react";
 import { FaBell } from "react-icons/fa";
 

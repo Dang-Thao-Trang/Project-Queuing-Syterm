@@ -1,4 +1,4 @@
-import { Card, Col, Layout, Row, Space, Statistic } from "antd";
+import { Col, Layout, Row, Space } from "antd";
 import { Content } from "antd/es/layout/layout";
 import { useState } from "react";
 import { BsCalendar, BsCalendarCheck, BsBookmarkStar } from "react-icons/bs";
@@ -9,7 +9,12 @@ import UseName from "../../component/UseName";
 import "./Dashboar.scss";
 import { Calendar } from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-// import Calendars from "../../assets/images/Date picker.png";
+import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
+import Chart from "../../component/Chart/Chart";
+import { FiLayers } from "react-icons/fi";
+import { TbBrandWechat } from "react-icons/tb";
+import { CiDesktop } from "react-icons/ci";
+import OverviewCard2 from "../../component/DashboardCard/Overview2";
 
 const Dashboar = () => {
   const [value, onChange] = useState(new Date());
@@ -19,58 +24,117 @@ const Dashboar = () => {
       <Layout>
         <Row>
           <Col span={16} className="chart">
-            <Space direction="horizontal">
-              <DashboardCard
-                className="Card1"
-                icon={<BsCalendar className="icon" />}
-                title={"Số thứ tự đã cấp"}
-                value={4.221}
-              />
-              <DashboardCard
-                className="Card2"
-                icon={<BsCalendarCheck />}
-                title={"Số thứ tự đã sử dụng"}
-                value={3.721}
-              />
-              <DashboardCard
-                className="Card3"
-                icon={<MdWifiCalling3 />}
-                title={"Số thứ tự đang chờ"}
-                value={468}
-              />
-              <DashboardCard
-                className="Card4"
-                icon={<BsBookmarkStar />}
-                title={"Số thứ tự đã bỏ qua"}
-                value={32}
-              />
-            </Space>
+            <h5>Dashboard</h5>
+            <h1>Biểu đồ cấp số</h1>
+            <div className="data">
+              <Space direction="horizontal">
+                <DashboardCard
+                  className1={" card_item Card1"}
+                  className2={"card_small"}
+                  icon1={<BsCalendar />}
+                  icon2={<ArrowUpOutlined />}
+                  title={"Số thứ tự đã cấp"}
+                  value1={4.221}
+                  value2={32.41}
+                />
+                <DashboardCard
+                  className1={"card_item Card2"}
+                  className2={"card_small"}
+                  icon1={<BsCalendarCheck />}
+                  icon2={<ArrowDownOutlined />}
+                  title={"Số thứ tự đã sử dụng"}
+                  value1={3.721}
+                  value2={32.41}
+                />
+                <DashboardCard
+                  className1={" card_item Card3"}
+                  className2={"card_small"}
+                  icon1={<MdWifiCalling3 />}
+                  icon2={<ArrowUpOutlined />}
+                  title={"Số thứ tự đang chờ"}
+                  value1={468}
+                  value2={56.41}
+                />
+                <DashboardCard
+                  className1={"card_item Card4"}
+                  className2={"card_small"}
+                  icon1={<BsBookmarkStar />}
+                  icon2={<ArrowDownOutlined />}
+                  title={"Số thứ tự đã bỏ qua"}
+                  value1={32}
+                  value2={22.41}
+                />
+              </Space>
+            </div>
+
             <Content
               style={{
                 margin: "24px 16px",
                 padding: 24,
-                minHeight: 280,
                 background: "white",
+                width: 791,
+                height: 484,
+                borderRadius: 12,
               }}
             >
-              jsdbkjwd
+              <Chart></Chart>
             </Content>
           </Col>
 
           <Col span={8} className="overview">
             <UseName />
-            <OverviewCard
-              title1={"4.221 "}
-              type={"Thiết bị"}
-              value1={"3.799"}
-              value2={"4.22"}
-              trangthaihoatdong1={"đang hoạt động"}
-              trangthaihoatdong2={"ngưng hoạt động"}
-            ></OverviewCard>
-            <Card>
-              {/* <img src={Calendars} alt="Calendars" /> */}
-              <Calendar />
-            </Card>
+            <div className="ovw">
+              <h4>Tổng quan</h4>
+              <div className="review">
+                <OverviewCard
+                  classname={"rv review1"}
+                  percent={90}
+                  percent1={10}
+                  number={"4.221 "}
+                  icon={<CiDesktop />}
+                  typemue={"Thiết bị"}
+                  number1={"3.799"}
+                  number2={"4.22"}
+                  trangthaihoatdong1={"Đang hoạt động"}
+                  trangthaihoatdong2={"Ngưng hoạt động"}
+                ></OverviewCard>
+                <OverviewCard
+                  classname={"rv review2"}
+                  percent={76}
+                  percent1={10}
+                  number={"276 "}
+                  icon={<TbBrandWechat />}
+                  typemue={"Dịch vụ"}
+                  number1={"210"}
+                  number2={"66"}
+                  trangthaihoatdong1={"Đang hoạt động"}
+                  trangthaihoatdong2={"Ngưng hoạt động"}
+                ></OverviewCard>
+                <OverviewCard2
+                  classname={"rv review3"}
+                  percent={86}
+                  percent1={10}
+                  number={"4.221"}
+                  icon={<FiLayers />}
+                  typemue={"Cấp số"}
+                  number1={"3.721"}
+                  number2={"486"}
+                  number3={"32"}
+                  trangthaihoatdong1={"Đang chờ"}
+                  trangthaihoatdong2={"Đã sử dụng"}
+                  trangthaihoatdong3={"Bỏ qua"}
+                ></OverviewCard2>
+              </div>
+            </div>
+
+            <div className="calendar">
+              <Calendar
+                onChange={onChange}
+                value={value}
+                locale="en-EN"
+                // formatLongDate={(date) => formatDate(date, "dd MMM YYYY")}
+              />
+            </div>
           </Col>
         </Row>
       </Layout>

@@ -1,6 +1,5 @@
 import { Card, Progress, Space } from "antd";
-//component Card trên Dashboard
-function OverviewCard({
+function OverviewCard2({
   classname,
   percent,
   number,
@@ -8,8 +7,10 @@ function OverviewCard({
   icon,
   number1,
   number2,
+  number3,
   trangthaihoatdong1,
   trangthaihoatdong2,
+  trangthaihoatdong3,
 }) {
   return (
     <div>
@@ -35,13 +36,20 @@ function OverviewCard({
             <div className="dots2 dots"></div>
             {trangthaihoatdong2}
           </p>
+          <p>
+            <div className="dots3 dots"></div>
+            {trangthaihoatdong3}
+          </p>
         </div>
         <div className="rv_center">
-          <p style={{ marginTop: "18px" }}>
+          <p>
             <span>{number1}</span>
           </p>
-          <p style={{ marginBottom: "18px" }}>
+          <p>
             <span>{number2}</span>
+          </p>
+          <p>
+            <span>{number3}</span>
           </p>
         </div>
       </Card>
@@ -49,4 +57,4 @@ function OverviewCard({
   );
 }
 
-export default OverviewCard;
+export default OverviewCard2;
