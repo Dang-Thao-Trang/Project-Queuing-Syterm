@@ -1,0 +1,37 @@
+.number_level{
+    padding-left: 24px;
+    h3{
+        margin-top: 45px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FF7506;
+    }
+    .ant-layout-content{
+        margin-top: 20px;
+        border-radius: 12px;
+
+        .table{
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            thead{
+                background-color: #FF7506;
+                color:  #FFFFFF;;
+            }
+        }
+    }
+    .ant-breadcrumb{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 29px;
+        .ant-breadcrumb-link{
+            color: #7E7D88;
+        }
+        .ant-breadcrumb-link-2{
+            color: #FF7506;
+        }
+    }
+}

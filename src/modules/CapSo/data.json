@@ -1,0 +1,81 @@
+[{
+    "id":2010001,
+    "tenKH": "Nguyễn Huỳnh Ái Vân",
+    "tenDv":"Khám tim mạch",
+    "thoigiancap":"14:35-07/11/2021",
+    "hansudung":"14:35-12/11/2021",
+    "trangthai":"Đang chờ",
+    "nguoncap":"Kiosk"
+},
+{
+    "id":2010002,
+    "tenKH": "Huỳnh Ái Vân",
+    "tenDv":"Khám sản - Phụ khoa",
+    "thoigiancap":"14:35-07/11/2021",
+    "hansudung":"14:35-12/11/2021",
+    "trangthai":"Đã sử dụng",
+    "nguoncap":"Kiosk"
+},
+{
+    "id":2010003,
+    "tenKH": "Lê Ái Vân",
+    "tenDv":"Khám răng hàm mặt",
+    "thoigiancap":"14:35-07/11/2021",
+    "hansudung":"14:35-12/11/2021",
+    "trangthai":"Đang chờ",
+    "nguoncap":"Hệ thống"
+},
+{
+    "id":2010004,
+    "tenKH": "Nguyễn Ái Vân",
+    "tenDv":"Khám tai mũi họng",
+    "thoigiancap":"14:35-07/11/2021",
+    "hansudung":"14:35-12/11/2021",
+    "trangthai":"Đang chờ",
+    "nguoncap":"Hệ thống"
+},
+{
+    "id":2010005,
+    "tenKH": "Trần Thị Ái Vân",
+    "tenDv":"Khám hô hấp",
+    "thoigiancap":"14:35-07/11/2021",
+    "hansudung":"14:35-12/11/2021",
+    "trangthai":"Đang chờ",
+    "nguoncap":"Kiosk"
+},
+{
+    "id":2010006,
+    "tenKH": "Lê Huỳnh Nghĩa",
+    "tenDv":"Khám tổng quát",
+    "thoigiancap":"14:35-07/11/2021",
+    "hansudung":"14:35-12/11/2021",
+    "trangthai":"Đã sử dụng",
+    "nguoncap":"Hệ thống"
+},
+{
+    "id":2010007,
+    "tenKH": "Lê Huỳnh Đức",
+    "tenDv":"Khám tai mũi họng",
+    "thoigiancap":"14:35-07/11/2021",
+    "hansudung":"14:35-12/11/2021",
+    "trangthai":"Đã sử dụng",
+    "nguoncap":"Kiosk"
+},
+{
+    "id":2010008,
+    "tenKH": "Phan Văn Mạnh",
+    "tenDv":"Khám tổng quát",
+    "thoigiancap":"14:35-07/11/2021",
+    "hansudung":"14:35-12/11/2021",
+    "trangthai":"Bỏ qua",
+    "nguoncap":"Hệ thống"
+},
+{
+    "id":2010009,
+    "tenKH": "Lê Thị Cẩm Tiên",
+    "tenDv":"Khám tai mũi họng",
+    "thoigiancap":"14:35-07/11/2021",
+    "hansudung":"14:35-12/11/2021",
+    "trangthai":"Đã sử dụng",
+    "nguoncap":"Hệ thống"
+}]

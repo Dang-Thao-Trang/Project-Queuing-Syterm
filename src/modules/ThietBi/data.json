@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "Mathietbi": "KIO_01",
+        "tenthietbi":"Kiosk",
+        "IP": "192.168.1.10",
+        "trangthaihoatdong":"Ngưng hoạt động",
+        "trangthaiketnoi":"Mất kết nối",
+        "dichvusudung": "Khám tim mạch, Khám mắt..."
+    },
+    {
+        "id": 2,
+        "Mathietbi": "KIO_01",
+        "tenthietbi":"Kiosk",
+        "IP": "192.168.1.10",
+        "trangthaihoatdong":"Hoạt động",
+        "trangthaiketnoi":"Kết nối",
+        "dichvusudung": "Khám tim mạch, Khám mắt..."
+    },
+    {
+        "id": 3,
+        "Mathietbi": "KIO_01",
+        "tenthietbi":"Kiosk",
+        "IP": "192.168.1.10",
+        "trangthaihoatdong":"Hoạt động",
+        "trangthaiketnoi":"Mất kết nối",
+        "dichvusudung": "Khám tim mạch, Khám mắt..."
+    },
+    {
+        "id": 4,
+        "Mathietbi": "KIO_01",
+        "tenthietbi":"Kiosk",
+        "IP": "192.168.1.10",
+        "trangthaihoatdong":"Ngưng hoạt động",
+        "trangthaiketnoi":"Kết nối",
+        "dichvusudung": "Khám tim mạch, Khám mắt..."
+    },
+    {
+        "id": 5,
+        "Mathietbi": "KIO_01",
+        "tenthietbi":"Kiosk",
+        "IP": "192.168.1.10",
+        "trangthaihoatdong":"Hoạt động",
+        "trangthaiketnoi":"Mất kết nối",
+        "dichvusudung": "Khám tim mạch, Khám mắt..."
+    },
+    {
+        "id": 6,
+        "Mathietbi": "KIO_01",
+        "tenthietbi":"Kiosk",
+        "IP": "192.168.1.10",
+        "trangthaihoatdong":"Hoạt động",
+        "trangthaiketnoi":"Kết nối",
+        "dichvusudung": "Khám tim mạch, Khám mắt..."
+    },
+    {
+        "id": 7,
+        "Mathietbi": "KIO_01",
+        "tenthietbi":"Kiosk",
+        "IP": "192.168.1.10",
+        "trangthaihoatdong":"Ngưng hoạt động",
+        "trangthaiketnoi":"Kết nối",
+        "dichvusudung": "Khám tim mạch, Khám mắt..."
+    },
+    {
+        "id": 8,
+        "Mathietbi": "KIO_01",
+        "tenthietbi":"Kiosk",
+        "IP": "192.168.1.10",
+        "trangthaihoatdong":"Hoạt động",
+        "trangthaiketnoi":"Kết nối",
+        "dichvusudung": "Khám tim mạch, Khám mắt..."
+    },
+    {
+        "id": 9,
+        "Mathietbi": "KIO_01",
+        "tenthietbi":"Kiosk",
+        "IP": "192.168.1.10",
+        "trangthaihoatdong":"Hoạt động",
+        "trangthaiketnoi":"Mất kết nối",
+        "dichvusudung": "Khám tim mạch, Khám mắt..."
+    }
+]

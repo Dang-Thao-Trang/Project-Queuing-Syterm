@@ -1,163 +1,61 @@
-import { Table } from "antd";
+import Table from "react-bootstrap/Table";
 import { Content } from "antd/es/layout/layout";
 import React from "react";
+import data from "./data.json";
 import UseName from "../../component/UseName";
+import { Breadcrumb } from "antd";
+import "./ThietBi.scss";
 
 const ThietBi = () => {
-  const columns = [
-    {
-      title: "Mã thiết bị",
-      dataIndex: "Mathietbi",
-      key: "Mathietbi",
-    },
-    {
-      title: "Tên thiết bị",
-      dataIndex: "Tenthietbi",
-      key: "Tenthietbi",
-    },
-    {
-      title: "Địa chỉ IP",
-      dataIndex: "DiachiIP",
-      key: "DiachiIP",
-    },
-    {
-      title: "Trạng thái hoạt động",
-      dataIndex: "Trangthaihoatdong",
-      key: "Trangthaihoatdong",
-    },
-    {
-      title: "Trạng thái kết nối",
-      dataIndex: "Trangthaiketnoi",
-      key: "Trangthaiketnoi",
-    },
-    {
-      title: "Dịch vụ sử dụng",
-      dataIndex: "Dichvusudung",
-      key: "Dichvusudung",
-    },
-    {
-      title: "",
-      dataIndex: "Chitiet",
-      key: "Chitiet",
-    },
-    {
-      title: "",
-      dataIndex: "Capnhat",
-      key: "Capnhat",
-    },
-  ];
-
-  const dataSource = [
-    {
-      key: "1",
-      Mathietbi: "KIO_01",
-      Tenthietbi: "Kiosk",
-      DiachiIP: "192.168.1.10",
-      Trangthaihoatdong: "Ngưng hoạt động",
-      Trangthaiketnoi: "Mất kết nối",
-      Dichvusudung: "Khám tim mạch, khám mắt...",
-      Chitiet: "chi tiết",
-      Capnhat: "cập nhật",
-    },
-    {
-      key: "2",
-      Mathietbi: "KIO_01",
-      Tenthietbi: "Kiosk",
-      DiachiIP: "192.168.1.10",
-      Trangthaihoatdong: "Ngưng hoạt động",
-      Trangthaiketnoi: "Mất kết nối",
-      Dichvusudung: "Khám tim mạch, khám mắt...",
-      Chitiet: "chi tiết",
-      Capnhat: "cập nhật",
-    },
-    {
-      key: "3",
-      Mathietbi: "KIO_01",
-      Tenthietbi: "Kiosk",
-      DiachiIP: "192.168.1.10",
-      Trangthaihoatdong: "Ngưng hoạt động",
-      Trangthaiketnoi: "Mất kết nối",
-      Dichvusudung: "Khám tim mạch, khám mắt...",
-      Chitiet: "chi tiết",
-      Capnhat: "cập nhật",
-    },
-    {
-      key: "4",
-      Mathietbi: "KIO_01",
-      Tenthietbi: "Kiosk",
-      DiachiIP: "192.168.1.10",
-      Trangthaihoatdong: "Ngưng hoạt động",
-      Trangthaiketnoi: "Mất kết nối",
-      Dichvusudung: "Khám tim mạch, khám mắt...",
-      Chitiet: "chi tiết",
-      Capnhat: "cập nhật",
-    },
-    {
-      key: "5",
-      Mathietbi: "KIO_01",
-      Tenthietbi: "Kiosk",
-      DiachiIP: "192.168.1.10",
-      Trangthaihoatdong: "Ngưng hoạt động",
-      Trangthaiketnoi: "Mất kết nối",
-      Dichvusudung: "Khám tim mạch, khám mắt...",
-      Chitiet: "chi tiết",
-      Capnhat: "cập nhật",
-    },
-    {
-      key: "6",
-      Mathietbi: "KIO_01",
-      Tenthietbi: "Kiosk",
-      DiachiIP: "192.168.1.10",
-      Trangthaihoatdong: "Ngưng hoạt động",
-      Trangthaiketnoi: "Mất kết nối",
-      Dichvusudung: "Khám tim mạch, khám mắt...",
-      Chitiet: "chi tiết",
-      Capnhat: "cập nhật",
-    },
-    {
-      key: "7",
-      Mathietbi: "KIO_01",
-      Tenthietbi: "Kiosk",
-      DiachiIP: "192.168.1.10",
-      Trangthaihoatdong: "Ngưng hoạt động",
-      Trangthaiketnoi: "Mất kết nối",
-      Dichvusudung: "Khám tim mạch, khám mắt...",
-      Chitiet: "chi tiết",
-      Capnhat: "cập nhật",
-    },
-    {
-      key: "8",
-      Mathietbi: "KIO_01",
-      Tenthietbi: "Kiosk",
-      DiachiIP: "192.168.1.10",
-      Trangthaihoatdong: "Ngưng hoạt động",
-      Trangthaiketnoi: "Mất kết nối",
-      Dichvusudung: "Khám tim mạch, khám mắt...",
-      Chitiet: "chi tiết",
-      Capnhat: "cập nhật",
-    },
-    {
-      key: "9",
-      Mathietbi: "KIO_01",
-      Tenthietbi: "Kiosk",
-      DiachiIP: "192.168.1.10",
-      Trangthaihoatdong: "Ngưng hoạt động",
-      Trangthaiketnoi: "Mất kết nối",
-      Dichvusudung: "Khám tim mạch, khám mắt...",
-      Chitiet: "chi tiết",
-      Capnhat: "cập nhật",
-    },
-  ];
-
   return (
-    <div>
+    <div className="device">
       <UseName />
+      <Breadcrumb
+        separator=">"
+        items={[
+          { title: "Thiết bị" },
+          { title: "Danh Sách thiết bị", className: "ant-breadcrumb-link-2" },
+        ]}
+      />
+      <h3>Danh sách thiết bị</h3>
       <Content
         style={{
-          paddingTop: 80,
+          background: "white",
+          width: 1112,
+          height: 490,
+          borderRadius: 12,
         }}
       >
-        <Table dataSource={dataSource} columns={columns} />;
+        <Table bordered striped>
+          <thead>
+            <tr>
+              <th>Mã dịch vụ</th>
+              <th>Tên thiết bị</th>
+              <th>Địa chỉ IP</th>
+              <th>Trạng thái hoạt động</th>
+              <th>Trạng thái kết nối</th>
+              <th>Dịch vụ sử dụng</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item) => {
+              return (
+                <tr key={item.id}>
+                  <td>{item.Mathietbi}</td>
+                  <td>{item.tenthietbi}</td>
+                  <td>{item.IP}</td>
+                  <td>{item.trangthaihoatdong}</td>
+                  <td>{item.trangthaiketnoi}</td>
+                  <td>{item.dichvusudung}</td>
+                  <td>chi tiết</td>
+                  <td>cập nhật</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </Table>
       </Content>
     </div>
   );

@@ -1,0 +1,73 @@
+[{
+    "id": 1,
+    "tendangnhap":"tuyetnguyen@12",
+    "hovaten":"Nguyen Van A",
+    "sdt":"0919256712",
+    "email":"tuyetnguyen123@gmail.com",
+    "vaitro":"Kế toán",
+    "trangthaihoatdong":"Hoạt động"
+},{
+    "id": 2,
+    "tendangnhap":"tuyetnguyen@10",
+    "hovaten":"Nguyen Van B",
+    "sdt":"0919256712",
+    "email":"tuyetnguyen123@gmail.com",
+    "vaitro":"Kế toán",
+    "trangthaihoatdong":"Hoạt động"
+},{
+    "id": 3,
+    "tendangnhap":"tuyetnguyen@22",
+    "hovaten":"Nguyen Van C",
+    "sdt":"0919256712",
+    "email":"tuyetnguyen222@gmail.com",
+    "vaitro":"Kế toán",
+    "trangthaihoatdong":"Ngưng hoạt động"
+},{
+    "id": 4,
+    "tendangnhap":"tuyetnguyen@18",
+    "hovaten":"Nguyen Van D",
+    "sdt":"0919253715",
+    "email":"tuyetnguyen232@gmail.com",
+    "vaitro":"Kế toán",
+    "trangthaihoatdong":"Hoạt động"
+},{
+    "id": 5,
+    "tendangnhap":"tuyetnguyen@19",
+    "hovaten":"Nguyen Van T",
+    "sdt":"0919233712",
+    "email":"tuyetnguyen244@gmail.com",
+    "vaitro":"Kế toán",
+    "trangthaihoatdong":"Hoạt động"
+},{
+    "id": 6,
+    "tendangnhap":"tuyetnguyen@18",
+    "hovaten":"Nguyen Van K",
+    "sdt":"0919277712",
+    "email":"tuyetnguyen242@gmail.com",
+    "vaitro":"Kế toán",
+    "trangthaihoatdong":"Hoạt động"
+},{
+    "id": 7,
+    "tendangnhap":"tuyetnguyen@16",
+    "hovaten":"Nguyen Van N",
+    "sdt":"0919257008",
+    "email":"tuyetnguyen112@gmail.com",
+    "vaitro":"Kế toán",
+    "trangthaihoatdong":"Hoạt động"
+},{
+    "id": 8,
+    "tendangnhap":"tuyetnguyen@14",
+    "hovaten":"Nguyen Van M",
+    "sdt":"0919258003",
+    "email":"tuyetnguyen277@gmail.com",
+    "vaitro":"Kế toán",
+    "trangthaihoatdong":"Ngưng hoạt động"
+},{
+    "id": 9,
+    "tendangnhap":"tuyetnguyen@13",
+    "hovaten":"Nguyen Van L",
+    "sdt":"0919251272",
+    "email":"tuyetnguyen278@gmail.com",
+    "vaitro":"Kế toán",
+    "trangthaihoatdong":"Hoạt động"
+}]
