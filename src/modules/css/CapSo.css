@@ -1,0 +1,36 @@
+.number_level {
+  padding-left: 24px;
+}
+.number_level h3 {
+  margin-top: 45px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FF7506;
+}
+.number_level .ant-layout-content {
+  margin-top: 20px;
+  border-radius: 12px;
+}
+.number_level .ant-layout-content .table {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.number_level .ant-layout-content .table thead {
+  background-color: #FF7506;
+  color: #FFFFFF;
+}
+.number_level .ant-breadcrumb {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 29px;
+}
+.number_level .ant-breadcrumb .ant-breadcrumb-link {
+  color: #7E7D88;
+}
+.number_level .ant-breadcrumb .ant-breadcrumb-link-2 {
+  color: #FF7506;
+}/*# sourceMappingURL=CapSo.css.map */

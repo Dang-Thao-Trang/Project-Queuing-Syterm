@@ -1,0 +1,35 @@
+.service {
+  padding-left: 24px;
+}
+.service h3 {
+  margin-top: 45px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FF7506;
+}
+.service .ant-layout-content {
+  margin-top: 20px;
+}
+.service .ant-layout-content .table {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.service .ant-layout-content .table thead {
+  background-color: #FF7506;
+  color: #FFFFFF;
+}
+.service .ant-breadcrumb {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 29px;
+}
+.service .ant-breadcrumb .ant-breadcrumb-link {
+  color: #7E7D88;
+}
+.service .ant-breadcrumb .ant-breadcrumb-link-2 {
+  color: #FF7506;
+}/*# sourceMappingURL=DichVu.css.map */

@@ -39,7 +39,7 @@
   position: absolute;
   width: 100%;
   left: 0px;
-  top: 15px;
+  top: 10px;
   font-size: 12px;
   font-weight: 400;
   color: rgb(126, 125, 136);
@@ -48,4 +48,5 @@
   font-size: 16px;
   font-weight: 700;
   color: rgb(83, 82, 97);
+  margin-top: 10px;
 }/*# sourceMappingURL=UserName.css.map */
