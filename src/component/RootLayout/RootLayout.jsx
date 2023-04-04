@@ -6,7 +6,7 @@ import { FiLayers } from "react-icons/fi";
 import { MdOutlineDashboard } from "react-icons/md";
 import { CiDesktop } from "react-icons/ci";
 import { TbBrandWechat } from "react-icons/tb";
-import { CarryOutOutlined } from "@ant-design/icons";
+import { FiLogOut } from "react-icons/fi";
 import AppRouter from "../AppRouter";
 import "./style.scss";
 
@@ -74,6 +74,12 @@ const RootLayout = () => {
                   label: "Nhật ký người dùng",
                 },
               ],
+            },
+            {
+              key: "/DangXuat",
+              icon: <FiLogOut />,
+              label: "Đăng xuất",
+              className: "DangXuat",
             },
           ]}
         />

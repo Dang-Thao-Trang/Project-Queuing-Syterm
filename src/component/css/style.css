@@ -16,6 +16,7 @@
 .layout .ant-layout-sider-children .ant-menu-item {
   display: flex;
   align-items: center;
+  margin-bottom: 6px;
 }
 .layout .ant-layout-sider-children .ant-menu-item .ant-menu-item-icon {
   color: rgb(169, 169, 176);

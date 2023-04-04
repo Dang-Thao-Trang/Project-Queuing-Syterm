@@ -1,12 +1,24 @@
-import { Content } from "antd/es/layout/layout";
+import UseName from "../../component/UseName";
 import React from "react";
 import Table from "react-bootstrap/Table";
 import data from "./data.json";
-import UseName from "../../component/UseName";
-import { Breadcrumb } from "antd";
 import "./CapSo.scss";
+import dayjs from "dayjs";
+import { Content } from "antd/es/layout/layout";
+import { CaretDownOutlined } from "@ant-design/icons";
+import { RiAddFill } from "react-icons/ri";
+import { MdOutlineCalendarMonth } from "react-icons/md";
+import { IoMdArrowDropright } from "react-icons/io";
+import { Breadcrumb, Select, Input, Row, Col, DatePicker } from "antd";
+const { Search } = Input;
+const { Option } = Select;
+const dateFormat = "DD/MM/YYYY";
 
 const CapSo = () => {
+  const handleSearch = (value) => {
+    // Do something to fetch options based on the search value
+    // and setOptions with the results
+  };
   return (
     <div className="number_level">
       <UseName />
@@ -18,6 +30,111 @@ const CapSo = () => {
         ]}
       />
       <h3>Quản lý cấp số</h3>
+      <div className="add_device">
+        <div className="icon_add">
+          <RiAddFill />
+        </div>
+        <span>Cấp số mới</span>
+      </div>
+      <div className="data_classification">
+        <Row>
+          <Col span={3.5}>
+            <div className="active">
+              <h6>Tên dịch vụ</h6>
+              <Select
+                suffixIcon={<CaretDownOutlined color="#FF7506" />}
+                showSearch
+                placeholder="Tất cả"
+                optionFilterProp="children"
+                filterOption={(input, option) =>
+                  (option?.label ?? "")
+                    .toLowerCase()
+                    .includes(input.toLowerCase())
+                }
+              >
+                <Option value="all">Tất cả</Option>
+                <Option value="hoatdong">Hoạt động</Option>
+                <Option value="ngunghoatdong">Ngưng hoạt động</Option>
+              </Select>
+            </div>
+          </Col>
+          <Col span={3.5}>
+            <div className="active">
+              <h6>Tình trạng</h6>
+              <Select
+                suffixIcon={<CaretDownOutlined color="#FF7506" />}
+                showSearch
+                placeholder="Tất cả"
+                optionFilterProp="children"
+                filterOption={(input, option) =>
+                  (option?.label ?? "")
+                    .toLowerCase()
+                    .includes(input.toLowerCase())
+                }
+              >
+                <Option value="all">Tất cả</Option>
+                <Option value="hoatdong">Hoạt động</Option>
+                <Option value="ngunghoatdong">Ngưng hoạt động</Option>
+              </Select>
+            </div>
+          </Col>
+          <Col span={3.5}>
+            <div className="active">
+              <h6>Nguồn cấp</h6>
+              <Select
+                suffixIcon={<CaretDownOutlined color="#FF7506" />}
+                showSearch
+                placeholder="Tất cả"
+                optionFilterProp="children"
+                filterOption={(input, option) =>
+                  (option?.label ?? "")
+                    .toLowerCase()
+                    .includes(input.toLowerCase())
+                }
+              >
+                <Option value="all">Tất cả</Option>
+                <Option value="hoatdong">Hoạt động</Option>
+                <Option value="ngunghoatdong">Ngưng hoạt động</Option>
+              </Select>
+            </div>
+          </Col>
+          <Col span={7}>
+            <div className="data_time">
+              <h6>Chọn thời gian</h6>
+              <DatePicker
+                defaultValue={dayjs("10/10/2021", dateFormat)}
+                format={dateFormat}
+                suffixIcon={
+                  <MdOutlineCalendarMonth className="icon_calendar" />
+                }
+                className=""
+              />
+              <div className="icon_sm">
+                <IoMdArrowDropright />
+              </div>
+              <DatePicker
+                defaultValue={dayjs("18/10/2021", dateFormat)}
+                format={dateFormat}
+                suffixIcon={
+                  <MdOutlineCalendarMonth className="icon_calendar" />
+                }
+              />
+            </div>
+          </Col>
+          <Col span={5.5}>
+            <div className="search">
+              <h6>Từ khoá</h6>
+              <Search
+                placeholder="Nhập từ khoá"
+                onSearch={handleSearch}
+                style={{
+                  width: 300,
+                }}
+              />
+            </div>
+          </Col>
+        </Row>
+      </div>
       <Content
         style={{
           background: "white",

@@ -36,7 +36,6 @@
             width: 28px;
             text-align: center;
             left: 28px;
-            // top: 28px;         
             background-color: #FF9138;
             color: #ffff;
             transform: rotate(-180deg);
@@ -50,7 +49,6 @@
                     height: 100%;
                     border-radius: 20px;
                     overflow: hidden;
-    
                 }
             }
         }
@@ -69,19 +67,7 @@
             color: #FF7506;
         }
     }
-    .ant-layout-content{
-        margin-top: 13px;
-        .table{
-            width: 100%;
-            height: 100%;
-            border-radius: 12px;
-            overflow: hidden;
-            thead{
-                background-color: #FF9138;
-                color:  #FFFFFF;;
-            }
-        }
-    }
+    
    
     .data_classification{
         width: 1112px;
@@ -129,7 +115,10 @@
                         }                        
                     }             
                 }
-            }             
+            } 
+            .ant-select-show-search .ant-select-selector{
+                background-color: #FF7506;
+            }            
         }          
        }
        .search{
@@ -166,5 +155,26 @@
                }
            }
        } 
+    }
+    .ant-layout-content{
+        margin-top: 13px;
+        .table{
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            thead{
+                background-color: #FF9138;
+                color:  #FFFFFF;           
+            }
+            tbody{
+                tr:nth-child(even) {
+                    background-color: #FFF2E7;
+                }            
+                tr:nth-child(odd) {
+                    background-color: white;
+                }
+            }
+        }
     }
 }

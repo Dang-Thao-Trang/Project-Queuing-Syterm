@@ -1,10 +1,18 @@
-import { Content } from "antd/es/layout/layout";
 import React from "react";
 import UseName from "../../component/UseName";
 import Table from "react-bootstrap/Table";
 import data from "../CapSo/data.json";
-import { Breadcrumb } from "antd";
 import "./BaoCao.scss";
+import dayjs from "dayjs";
+import { Content } from "antd/es/layout/layout";
+import { Breadcrumb, Space, DatePicker } from "antd";
+import { MdOutlineCalendarMonth } from "react-icons/md";
+// import { HiDocumentArrowUp } from "react-icons/hi2";
+// import { HiDocumentArrowUp } from "react-icons/hi";
+import { FaFileDownload } from "react-icons/fa";
+import { IoMdArrowDropright } from "react-icons/io";
+
+const dateFormat = "DD/MM/YYYY";
 
 const BaoCao = () => {
   return (
@@ -17,7 +25,30 @@ const BaoCao = () => {
           { title: "Lập báo cáo", className: "ant-breadcrumb-link-2" },
         ]}
       />
-      <h3>Danh sách báo cáo</h3>
+      <div className="data_time">
+        <h6>Chọn thời gian</h6>
+        <DatePicker
+          defaultValue={dayjs("10/10/2021", dateFormat)}
+          format={dateFormat}
+          suffixIcon={<MdOutlineCalendarMonth className="icon_calendar" />}
+          className=""
+        />
+        <div className="icon_sm">
+          <IoMdArrowDropright />
+        </div>
+        <DatePicker
+          defaultValue={dayjs("18/10/2021", dateFormat)}
+          format={dateFormat}
+          suffixIcon={<MdOutlineCalendarMonth className="icon_calendar" />}
+        />
+      </div>
+      <div className="download">
+        <div className="icon_down">
+          <FaFileDownload />
+        </div>
+        <span>Tải về</span>
+      </div>
+
       <Content
         style={{
           background: "white",

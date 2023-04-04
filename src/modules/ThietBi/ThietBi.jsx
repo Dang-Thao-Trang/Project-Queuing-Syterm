@@ -1,31 +1,24 @@
 import Table from "react-bootstrap/Table";
 import { useState } from "react";
-
 import { Content } from "antd/es/layout/layout";
-// import React from "react";
 import data from "./data.json";
-import UseName from "../../component/UseName";
-import { Breadcrumb, Select, Input, AutoComplete, Row, Col } from "antd";
 import "./ThietBi.scss";
-import { CaretDownOutlined, SearchOutlined } from "@ant-design/icons";
+// import React from "react";
+import UseName from "../../component/UseName";
+import { Breadcrumb, Select, Input, Row, Col } from "antd";
+import { CaretDownOutlined } from "@ant-design/icons";
 import { RiAddFill } from "react-icons/ri";
-
-const { Option } = Select;
-const mockVal = (str, repeat = 1) => ({
-  value: str.repeat(repeat),
-});
 const { Search } = Input;
+const { Option } = Select;
 
 const ThietBi = () => {
-  const onChange = (value) => {
-    console.log(`selected ${value}`);
-  };
+  // const onChange = (value) => {
+  //   console.log(`selected ${value}`);
+  // };
   // const onSearch = (value) => {
   //   console.log("search:", value);
   // };
-  const onSearch = (value) => console.log(value);
   const [options, setOptions] = useState([]);
-
   const handleSearch = (value) => {
     // Do something to fetch options based on the search value
     // and setOptions with the results
@@ -116,7 +109,7 @@ const ThietBi = () => {
           borderRadius: 12,
         }}
       >
-        <Table bordered striped>
+        <Table bordered>
           <thead>
             <tr>
               <th>Mã dịch vụ</th>
